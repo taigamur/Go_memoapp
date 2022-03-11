@@ -7,3 +7,4 @@
 2022/03/10 13:52:59 main.go:14: test
 2022/03/10 13:57:24 main.go:14: test
 2022/03/10 13:59:24 main.go:14: test
+2022/03/11 14:46:34 users.go:66: no such table: useres
