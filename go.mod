@@ -1,4 +1,4 @@
-module udemy1_todo_app
+module memo_app
 
 go 1.17
 

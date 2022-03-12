@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"udemy1_todo_app/app/models"
+	"memo_app/app/models"
 )
 
 func main() {
+
 	// fmt.Println(config.Config.Port)
 	// fmt.Println(config.Config.SQLDriver)
 	// fmt.Println(config.Config.DbName)

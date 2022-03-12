@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
-	"udemy1_todo_app/config"
+	"memo_app/config"
 
 	"github.com/google/uuid"
 	_ "github.com/mattn/go-sqlite3"
