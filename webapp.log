@@ -8,3 +8,4 @@
 2022/03/10 13:57:24 main.go:14: test
 2022/03/10 13:59:24 main.go:14: test
 2022/03/11 14:46:34 users.go:66: no such table: useres
+2022/03/12 14:18:24 todos.go:53: sql: Scan error on column index 1, name "content": converting driver.Value type string ("First Todo") to a int: invalid syntax
