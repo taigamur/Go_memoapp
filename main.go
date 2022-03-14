@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"memo_app/app/controllers"
 	"memo_app/app/models"
 )
 
@@ -40,6 +41,5 @@ func main() {
 	// 	fmt.Println(v)
 	// }
 
-	t, _ := models.GetTodo(2)
-	t.DeleteTodo()
+	controllers.StartMainServer()
 }
