@@ -9,3 +9,1121 @@
 2022/03/10 13:59:24 main.go:14: test
 2022/03/11 14:46:34 users.go:66: no such table: useres
 2022/03/12 14:18:24 todos.go:53: sql: Scan error on column index 1, name "content": converting driver.Value type string ("First Todo") to a int: invalid syntax
+2022/03/15 04:42:48 server.go:3160: http: panic serving [::1]:55590: open app/views/templates/lauout.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc00009b7d0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00018e1c0}, {0x0, 0x0}, {0xc0000bba08, 0x3, 0xc0000bbb70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00018e1c0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00018e1c0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00018e1c0}, 0xc0000ce300)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00010e030}, {0x451d5f8, 0xc00018e1c0}, 0xc0000ce300)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b8e60, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:42:48 server.go:3160: http: panic serving [::1]:55591: open app/views/templates/lauout.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc00010e1b0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00012c000}, {0x0, 0x0}, {0xc0000c1a08, 0x3, 0xc0000c1b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00012c000}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00012c000}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00012c000}, 0xc0000ce100)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009b470}, {0x451d5f8, 0xc00012c000}, 0xc0000ce100)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b8f00, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:42:48 server.go:3160: http: panic serving [::1]:55592: open app/views/templates/lauout.html: no such file or directory
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc00010e3f0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00012c0e0}, {0x0, 0x0}, {0xc0000c1a08, 0x3, 0xc000108b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00012c0e0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00012c0e0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00012c0e0}, 0xc00015a000)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00010e270}, {0x451d5f8, 0xc00012c0e0}, 0xc00015a000)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000158000, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:42:49 server.go:3160: http: panic serving [::1]:55593: open app/views/templates/lauout.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc00010e5a0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00012c1c0}, {0x0, 0x0}, {0xc0000c1a08, 0x3, 0xc000048b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00012c1c0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00012c1c0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00012c1c0}, 0xc0000ce500)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009b950}, {0x451d5f8, 0xc00012c1c0}, 0xc0000ce500)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b8fa0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:42:49 server.go:3160: http: panic serving [::1]:55594: open app/views/templates/lauout.html: no such file or directory
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000072150})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00007c000}, {0x0, 0x0}, {0xc000207a08, 0x3, 0xc000107b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00007c000}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00007c000}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00007c000}, 0xc0000ce400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009b8f0}, {0x451d5f8, 0xc00007c000}, 0xc0000ce400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b9040, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:42:49 server.go:3160: http: panic serving [::1]:55595: open app/views/templates/lauout.html: no such file or directory
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc00009bbc0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00018e2a0}, {0x0, 0x0}, {0xc0000bba08, 0x3, 0xc000049b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00018e2a0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00018e2a0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00018e2a0}, 0xc0000ce600)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009ba40}, {0x451d5f8, 0xc00018e2a0}, 0xc0000ce600)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b90e0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:42:49 server.go:3160: http: panic serving [::1]:55596: open app/views/templates/lauout.html: no such file or directory
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000288240})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc0002b6000}, {0x0, 0x0}, {0xc000207a08, 0x3, 0xc000102b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc0002b6000}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc0002b6000}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc0002b6000}, 0xc00029e000)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000288090}, {0x451d5f8, 0xc0002b6000}, 0xc00029e000)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00028c000, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:42:54 server.go:3160: http: panic serving [::1]:55597: open app/views/templates/lauout.html: no such file or directory
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc0002883f0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc0002b60e0}, {0x0, 0x0}, {0xc000207a08, 0x3, 0xc000049b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc0002b60e0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc0002b60e0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc0002b60e0}, 0xc0000ce700)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009bc80}, {0x451d5f8, 0xc0002b60e0}, 0xc0000ce700)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b9180, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:42:54 server.go:3160: http: panic serving [::1]:55598: open app/views/templates/lauout.html: no such file or directory
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000072300})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00007c0e0}, {0x0, 0x0}, {0xc000209a08, 0x3, 0xc00004ab70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00007c0e0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00007c0e0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00007c0e0}, 0xc0000ce800)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009bd40}, {0x451d5f8, 0xc00007c0e0}, 0xc0000ce800)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b9220, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:42:54 server.go:3160: http: panic serving [::1]:55599: open app/views/templates/lauout.html: no such file or directory
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc00010e840})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00012c2a0}, {0x0, 0x0}, {0xc000207a08, 0x3, 0xc000048b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00012c2a0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00012c2a0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00012c2a0}, 0xc00015a100)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00010e6c0}, {0x451d5f8, 0xc00012c2a0}, 0xc00015a100)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001580a0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:30 server.go:3160: http: panic serving [::1]:55603: open app/views/templates/lauout.html: no such file or directory
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc00010e9c0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00012c380}, {0x0, 0x0}, {0xc000207a08, 0x3, 0xc0001deb70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00012c380}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00012c380}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00012c380}, 0xc0000cea00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009bef0}, {0x451d5f8, 0xc00012c380}, 0xc0000cea00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b92c0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:30 server.go:3160: http: panic serving [::1]:55604: open app/views/templates/lauout.html: no such file or directory
+goroutine 31 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000072480})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00007c1c0}, {0x0, 0x0}, {0xc000203a08, 0x3, 0xc00004bb70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00007c1c0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00007c1c0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00007c1c0}, 0xc0000ce900)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009be90}, {0x451d5f8, 0xc00007c1c0}, 0xc0000ce900)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b9360, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:30 server.go:3160: http: panic serving [::1]:55605: open app/views/templates/lauout.html: no such file or directory
+goroutine 32 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc0001e2150})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00018e380}, {0x0, 0x0}, {0xc000207a08, 0x3, 0xc0001dfb70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00018e380}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00018e380}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00018e380}, 0xc0000ceb00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009bfb0}, {0x451d5f8, 0xc00018e380}, 0xc0000ceb00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b9400, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:31 server.go:3160: http: panic serving [::1]:55606: open app/views/templates/lauout.html: no such file or directory
+goroutine 53 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000288750})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc0002b61c0}, {0x0, 0x0}, {0xc000203a08, 0x3, 0xc000102b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc0002b61c0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc0002b61c0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc0002b61c0}, 0xc00029e200)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002885d0}, {0x451d5f8, 0xc0002b61c0}, 0xc00029e200)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00028c0a0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:31 server.go:3160: http: panic serving [::1]:55607: open app/views/templates/lauout.html: no such file or directory
+goroutine 54 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000072600})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00007c2a0}, {0x0, 0x0}, {0xc000205a08, 0x3, 0xc000049b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00007c2a0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00007c2a0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00007c2a0}, 0xc00029e100)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000288570}, {0x451d5f8, 0xc00007c2a0}, 0xc00029e100)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00028c140, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:31 server.go:3160: http: panic serving [::1]:55608: open app/views/templates/lauout.html: no such file or directory
+goroutine 66 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000072780})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00007c380}, {0x0, 0x0}, {0xc000205a08, 0x3, 0xc0001dfb70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00007c380}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x4, {0x451d5f8, 0xc00007c380}, 0x486a108)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00007c380}, 0xc0000cec00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001e2210}, {0x451d5f8, 0xc00007c380}, 0xc0000cec00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b94a0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:32 server.go:3160: http: panic serving [::1]:55609: open app/views/templates/lauout.html: no such file or directory
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000072960})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00007c460}, {0x0, 0x0}, {0xc000205a08, 0x3, 0xc000103b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00007c460}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00007c460}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00007c460}, 0xc00029e400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002888d0}, {0x451d5f8, 0xc00007c460}, 0xc00029e400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00028c1e0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:32 server.go:3160: http: panic serving [::1]:55610: open app/views/templates/lauout.html: no such file or directory
+goroutine 57 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000288a50})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc0002b62a0}, {0x0, 0x0}, {0xc000203a08, 0x3, 0xc000102b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc0002b62a0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc0002b62a0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc0002b62a0}, 0xc00029e300)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000288870}, {0x451d5f8, 0xc0002b62a0}, 0xc00029e300)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00028c280, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:32 server.go:3160: http: panic serving [::1]:55611: open app/views/templates/lauout.html: no such file or directory
+goroutine 67 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000288bd0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc0002b6380}, {0x0, 0x0}, {0xc000203a08, 0x3, 0xc0001e0b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc0002b6380}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc0002b6380}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc0002b6380}, 0xc0000ced00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001e22d0}, {0x451d5f8, 0xc0002b6380}, 0xc0000ced00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b9540, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:32 server.go:3160: http: panic serving [::1]:55612: open app/views/templates/lauout.html: no such file or directory
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc0001e2450})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00018e460}, {0x0, 0x0}, {0xc000207a08, 0x3, 0xc000107b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00018e460}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00018e460}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00018e460}, 0xc000242200)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000072ae0}, {0x451d5f8, 0xc00018e460}, 0xc000242200)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000340000, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:32 server.go:3160: http: panic serving [::1]:55613: open app/views/templates/lauout.html: no such file or directory
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000288d50})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc0002b6460}, {0x0, 0x0}, {0xc000203a08, 0x3, 0xc000103b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc0002b6460}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc0002b6460}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc0002b6460}, 0xc000242100)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000072a80}, {0x451d5f8, 0xc0002b6460}, 0xc000242100)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0003400a0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:32 server.go:3160: http: panic serving [::1]:55614: open app/views/templates/lauout.html: no such file or directory
+goroutine 41 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc00010ec00})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00012c460}, {0x0, 0x0}, {0xc000207a08, 0x3, 0xc0001deb70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00012c460}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00012c460}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00012c460}, 0xc00015a200)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00010ea80}, {0x451d5f8, 0xc00012c460}, 0xc00015a200)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000158140, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:33 server.go:3160: http: panic serving [::1]:55615: open app/views/templates/lauout.html: no such file or directory
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc00010ed80})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00012c540}, {0x0, 0x0}, {0xc000207a08, 0x3, 0xc00004eb70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00012c540}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00012c540}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00012c540}, 0xc000242400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000072c60}, {0x451d5f8, 0xc00012c540}, 0xc000242400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000340140, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:33 server.go:3160: http: panic serving [::1]:55616: open app/views/templates/lauout.html: no such file or directory
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000288ed0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc0002b6540}, {0x0, 0x0}, {0xc000405a08, 0x3, 0xc00004db70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc0002b6540}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc0002b6540}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc0002b6540}, 0xc000242300)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000072c00}, {0x451d5f8, 0xc0002b6540}, 0xc000242300)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0003401e0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:33 server.go:3160: http: panic serving [::1]:55617: open app/views/templates/lauout.html: no such file or directory
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc0001e2600})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00018e540}, {0x0, 0x0}, {0xc000209a08, 0x3, 0xc00004fb70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00018e540}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00018e540}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00018e540}, 0xc000242500)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000072d20}, {0x451d5f8, 0xc00018e540}, 0xc000242500)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000340280, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:33 server.go:3160: http: panic serving [::1]:55618: open app/views/templates/lauout.html: no such file or directory
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000072f60})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00007c540}, {0x0, 0x0}, {0xc000203a08, 0x3, 0xc0001dfb70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00007c540}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00007c540}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00007c540}, 0xc000242600)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000072de0}, {0x451d5f8, 0xc00007c540}, 0xc000242600)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000340320, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:47 server.go:3160: http: panic serving [::1]:55622: open app/views/templates/lauout.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000112150})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00012a000}, {0x0, 0x0}, {0xc0000bba08, 0x3, 0xc000048b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00012a000}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00012a000}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00012a000}, 0xc0000ce200)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009b530}, {0x451d5f8, 0xc00012a000}, 0xc0000ce200)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b8f00, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:47 server.go:3160: http: panic serving [::1]:55623: open app/views/templates/lauout.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000072150})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00007c000}, {0x0, 0x0}, {0xc0000c1a08, 0x3, 0xc0000c1b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00007c000}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00007c000}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00007c000}, 0xc0000ce100)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009b470}, {0x451d5f8, 0xc00007c000}, 0xc0000ce100)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b8fa0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:47 server.go:3160: http: panic serving [::1]:55624: open app/views/templates/lauout.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc00009b7d0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00018e0e0}, {0x0, 0x0}, {0xc0001aba08, 0x3, 0xc000049b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00018e0e0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00018e0e0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00018e0e0}, 0xc0000ce300)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009b620}, {0x451d5f8, 0xc00018e0e0}, 0xc0000ce300)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b9040, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:50 server.go:3160: http: panic serving [::1]:55626: open app/views/templates/lauout.html: no such file or directory
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc00009b950})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00018e1c0}, {0x0, 0x0}, {0xc0000c1a08, 0x3, 0xc0000c1b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00018e1c0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00018e1c0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00018e1c0}, 0xc00029e200)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000288180}, {0x451d5f8, 0xc00018e1c0}, 0xc00029e200)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00028c000, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:50 server.go:3160: http: panic serving [::1]:55627: open app/views/templates/lauout.html: no such file or directory
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000072300})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00007c0e0}, {0x0, 0x0}, {0xc0001a7a08, 0x3, 0xc000102b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00007c0e0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00007c0e0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00007c0e0}, 0xc00029e000)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002880f0}, {0x451d5f8, 0xc00007c0e0}, 0xc00029e000)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00028c0a0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:50 server.go:3160: http: panic serving [::1]:55628: open app/views/templates/lauout.html: no such file or directory
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000072480})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00007c1c0}, {0x0, 0x0}, {0xc0001a9a08, 0x3, 0xc000048b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00007c1c0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00007c1c0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00007c1c0}, 0xc000164000)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000112270}, {0x451d5f8, 0xc00007c1c0}, 0xc000164000)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000162000, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:51 server.go:3160: http: panic serving [::1]:55629: open app/views/templates/lauout.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000072780})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00007c2a0}, {0x0, 0x0}, {0xc0001a9a08, 0x3, 0xc000102b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00007c2a0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00007c2a0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00007c2a0}, 0xc00023e100)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000072600}, {0x451d5f8, 0xc00007c2a0}, 0xc00023e100)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00023c000, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:51 server.go:3160: http: panic serving [::1]:55630: open app/views/templates/lauout.html: no such file or directory
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000072900})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00007c380}, {0x0, 0x0}, {0xc0001a9a08, 0x3, 0xc000048b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00007c380}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00007c380}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00007c380}, 0xc00023e000)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000725a0}, {0x451d5f8, 0xc00007c380}, 0xc00023e000)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00023c0a0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:51 server.go:3160: http: panic serving [::1]:55631: open app/views/templates/lauout.html: no such file or directory
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc0001124b0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00012a0e0}, {0x0, 0x0}, {0xc0000c1a08, 0x3, 0xc000107b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00012a0e0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00012a0e0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00012a0e0}, 0xc000164100)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000112330}, {0x451d5f8, 0xc00012a0e0}, 0xc000164100)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001620a0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:56 server.go:3160: http: panic serving [::1]:55632: open app/views/templates/lauout.html: no such file or directory
+goroutine 53 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000112660})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00012a1c0}, {0x0, 0x0}, {0xc0000c1a08, 0x3, 0xc000104b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00012a1c0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00012a1c0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00012a1c0}, 0xc00029e400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002884b0}, {0x451d5f8, 0xc00012a1c0}, 0xc00029e400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00028c140, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:56 server.go:3160: http: panic serving [::1]:55633: open app/views/templates/lauout.html: no such file or directory
+goroutine 54 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc0001127e0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00012a2a0}, {0x0, 0x0}, {0xc0000bba08, 0x3, 0xc000103b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00012a2a0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00012a2a0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00012a2a0}, 0xc00029e300)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000288450}, {0x451d5f8, 0xc00012a2a0}, 0xc00029e300)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00028c1e0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:43:56 server.go:3160: http: panic serving [::1]:55634: open app/views/templates/lauout.html: no such file or directory
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000072ae0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00007c460}, {0x0, 0x0}, {0xc0001a9a08, 0x3, 0xc000049b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00007c460}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00007c460}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00007c460}, 0xc0000ce400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009ba70}, {0x451d5f8, 0xc00007c460}, 0xc0000ce400)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b90e0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:44:34 server.go:3160: http: panic serving [::1]:55636: open app/views/templates/lauout.html: no such file or directory
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000112b70})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00012a460}, {0x0, 0x0}, {0xc0000bba08, 0x3, 0xc0000bbb70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00012a460}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00012a460}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00012a460}, 0xc000164600)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001128a0}, {0x451d5f8, 0xc00012a460}, 0xc000164600)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000162140, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:44:34 server.go:3160: http: panic serving [::1]:55637: open app/views/templates/lauout.html: no such file or directory
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc00009bbf0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00018e2a0}, {0x0, 0x0}, {0xc0000c1a08, 0x3, 0xc000049b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00018e2a0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00018e2a0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00018e2a0}, 0xc00023e600)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000072ba0}, {0x451d5f8, 0xc00018e2a0}, 0xc00023e600)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00023c140, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:44:34 server.go:3160: http: panic serving [::1]:55638: open app/views/templates/lauout.html: no such file or directory
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc00009bd70})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00018e380}, {0x0, 0x0}, {0xc0001aba08, 0x3, 0xc000048b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00018e380}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00018e380}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00018e380}, 0xc00023e700)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000072c60}, {0x451d5f8, 0xc00018e380}, 0xc00023e700)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00023c1e0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:44:35 server.go:3160: http: panic serving [::1]:55639: open app/views/templates/lauout.html: no such file or directory
+goroutine 55 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc00009bef0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00018e460}, {0x0, 0x0}, {0xc0001aba08, 0x3, 0xc0002dcb70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00018e460}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00018e460}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00018e460}, 0xc00029e600)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000288630}, {0x451d5f8, 0xc00018e460}, 0xc00029e600)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00028c280, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:44:35 server.go:3160: http: panic serving [::1]:55640: open app/views/templates/lauout.html: no such file or directory
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000072de0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00007c540}, {0x0, 0x0}, {0xc0001a9a08, 0x3, 0xc000105b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00007c540}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00007c540}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00007c540}, 0xc00029e500)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002885d0}, {0x451d5f8, 0xc00007c540}, 0xc00029e500)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00028c320, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:44:35 server.go:3160: http: panic serving [::1]:55641: open app/views/templates/lauout.html: no such file or directory
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc0001f6090})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00018e540}, {0x0, 0x0}, {0xc0001ada08, 0x3, 0xc000105b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00018e540}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00018e540}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00018e540}, 0xc00023e900)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000072ea0}, {0x451d5f8, 0xc00018e540}, 0xc00023e900)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00023c280, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:44:40 server.go:3160: http: panic serving [::1]:55642: open app/views/templates/lauout.html: no such file or directory
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000073020})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00007c620}, {0x0, 0x0}, {0xc0001a9a08, 0x3, 0xc0002dcb70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00007c620}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00007c620}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00007c620}, 0xc0000ce800)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001f6210}, {0x451d5f8, 0xc00007c620}, 0xc0000ce800)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b9180, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:44:40 server.go:3160: http: panic serving [::1]:55643: open app/views/templates/lauout.html: no such file or directory
+goroutine 31 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000112cf0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00012a540}, {0x0, 0x0}, {0xc0001aba08, 0x3, 0xc000105b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00012a540}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00012a540}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00012a540}, 0xc0000ce700)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001f61b0}, {0x451d5f8, 0xc00012a540}, 0xc0000ce700)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b9220, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:44:40 server.go:3160: http: panic serving [::1]:55644: open app/views/templates/lauout.html: no such file or directory
+goroutine 57 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000288870})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc0002b80e0}, {0x0, 0x0}, {0xc0001a9a08, 0x3, 0xc0002ddb70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc0002b80e0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc0002b80e0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc0002b80e0}, 0xc00029e700)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002886f0}, {0x451d5f8, 0xc0002b80e0}, 0xc00029e700)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00028c3c0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:45:10 server.go:3160: http: panic serving [::1]:55646: open app/views/templates/lauout.html: no such file or directory
+goroutine 67 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000288a20})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc0002b81c0}, {0x0, 0x0}, {0xc0001a9a08, 0x3, 0xc000102b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc0002b81c0}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc0002b81c0}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc0002b81c0}, 0xc00023ec00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000731a0}, {0x451d5f8, 0xc0002b81c0}, 0xc00023ec00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00023c320, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:45:10 server.go:3160: http: panic serving [::1]:55647: open app/views/templates/lauout.html: no such file or directory
+goroutine 68 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000112e70})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00012a620}, {0x0, 0x0}, {0xc0001aba08, 0x3, 0xc0002dcb70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00012a620}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00012a620}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00012a620}, 0xc00023eb00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000073140}, {0x451d5f8, 0xc00012a620}, 0xc00023eb00)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00023c3c0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/15 04:45:10 server.go:3160: http: panic serving [::1]:55648: open app/views/templates/lauout.html: no such file or directory
+goroutine 32 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1802 +0xb9
+panic({0x4460e00, 0xc000112ff0})
+	/usr/local/Cellar/go/1.17.6/libexec/src/runtime/panic.go:1047 +0x266
+text/template.Must(...)
+	/usr/local/Cellar/go/1.17.6/libexec/src/text/template/helper.go:25
+memo_app/app/controllers.generateHTML({0x451d5f8, 0xc00012a700}, {0x0, 0x0}, {0xc0000bba08, 0x3, 0xc000048b70})
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:15 +0xf9
+memo_app/app/controllers.index({0x451d5f8, 0xc00012a700}, 0x0)
+	/Users/taiga/go/src/memo_app/app/controllers/route_main.go:33 +0xe5
+net/http.HandlerFunc.ServeHTTP(0x0, {0x451d5f8, 0xc00012a700}, 0x0)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x451d5f8, 0xc00012a700}, 0xc0000ce900)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001f62d0}, {0x451d5f8, 0xc00012a700}, 0xc0000ce900)
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b92c0, {0x451ee40, 0xc00009b320})
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.17.6/libexec/src/net/http/server.go:3034 +0x4e8
+2022/03/16 13:08:08 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:08:08 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:18:55 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:18:55 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:18:57 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:18:57 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:20:20 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:20:20 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:20:21 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:20:21 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:20:22 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:20:22 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:20:22 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:20:22 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:20:32 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:20:32 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:20:35 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
+2022/03/16 13:20:35 route_main.go:37: sql: expected 5 destination arguments in Scan, not 4
